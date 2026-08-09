@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    background: #050B1C;
+    color: #172033;
+}
+
+
+.app-container{
+    min-height: 100vh;
+}
+
+.header{
+    
+    padding: 28px 8%;
+    color: white;
+}
+
+.header-content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand{
+    font-size: 13px;
+    font-weight: 700;   
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    opacity: 0.75;
+    color: #9466ff;
+}
+
+.title{
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.subtitle{
+    margin: 8px 0 0;
+    font-size: 15px;
+    color: #c8d0df;
+}
+
+
+.main-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 25px 50px;
+}
+
+.filter-card{
+    background: #0B1733;
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(23, 32, 51, 0.06);
+}
+
+.section-label{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #d9deea;
+    margin-bottom: 16px;
+}
+.dash-options-list-option{
+    border: 1px solid #868788;
+    padding: 5px 18px; 
+    border-radius: 10px;
+}
+
+.radio-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.radio-item{
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 5px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    color: white;
+}
+
+
+.chart-card{
+    background-color: #0B1733;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 8px 30px rgba(23, 32, 51, 0.07);
+    color: white;
+
+    box-shadow: 
+        0 15px 40px rgba(0, 0, 0, 0.25),
+        0 0 30px rgba(22, 131, 255, 0.05);
+
+    overflow: hidden;
+}
+
+.chart-title{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #F5F7FF;
+}
+
+.chart-description{
+    margin: 6px 0 20px;
+    color: #9aaacd;
+    font-size: 14px;
+}
+
+
+
+
+.info-card{
+    margin-top: 25px;
+    padding: 24px 28px;
+    background: #0B1733;
+    border-radius: 16px;
+    color: white;
+}
+
+.info-title{
+    margin: 0 0 8px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.info-text{
+    margin: 0;
+    color: #96a9c5;
+    line-height: 1.6;
+}
+
+
+/* Responsive  */
+
+@media(max-width: 700px){
+    .header{
+        padding: 25px 20px;
+    }
+    .title{
+        font-size: 28px;
+    }
+    .main-content{
+        padding: 25px 15px 40px;
+    }
+
+    .filter-card, .chart-card, .info-card{
+        padding: 18px;
+    }
+
+    .radio-container{
+        gap: 8px;
+    }
+}
